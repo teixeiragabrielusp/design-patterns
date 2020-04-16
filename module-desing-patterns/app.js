@@ -1,6 +1,9 @@
 const Bank = require("./Bank");
+
+//Dependency injection para possibilitar a alteração no formato de exibição do log!!(decoupling dependencies)
 // const logger = require("./console-logger");
 const logger = require("./file-logger");
+
 const user1 = "John Doe";
 const user2 = "Richard Helm";
 

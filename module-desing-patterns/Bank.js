@@ -1,5 +1,9 @@
+//Foi declarado accounts fora da classBank para que ela não fosse acessível fora desse script
 let accounts = [];
+//Foi utilizado Symbol, pois ele é um método único e acessível somente nesse script (private method)
 const findAccount = Symbol("findAccount");
+
+
 const trimName = name =>
   `XXXXXXXX${name
     .replace(/\s/g, "")
@@ -9,6 +13,7 @@ const trimName = name =>
 const logger = data => console.log(data); // Logs activity to the console
 
 class Bank {
+  //É importante colocar a função logger num objeto para facilitar futuras alterações/manutenções
   config({
       logger
     }) {
