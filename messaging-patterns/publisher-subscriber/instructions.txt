@@ -1,0 +1,4 @@
+It's necessary to download RabbitMq: 
+https://www.rabbitmq.com/#getstarted
+
+After that it's necessary to run it!!
